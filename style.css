@@ -1,0 +1,99 @@
+section {
+    height: 400px;
+    margin: 10px 0;
+  }
+  #one {
+    background: rgb(150, 150, 150);
+  }
+  #two {
+    background: rgb(205, 205, 205);
+  }
+  div {
+    width: 90px;
+    height: 90px;
+    border: 3px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #two div {
+    width: 400px;
+  }
+  #red {
+    background: red;
+  }
+  #green {
+    background: green;
+  }
+  #blue {
+    background: blue;
+  }
+  #orange {
+    background: orange;
+  }
+  #purple {
+    background: purple;
+  }
+  #brown {
+    background: brown;
+  }
+  /* START BELOW THIS LINE */
+
+  #one {
+    display: flex; 
+    /* to style to make container a flexbox container */
+    justify-content: flex-end; 
+    /* to move elements to upper right hand corner of flexbox container */
+    flex-direction: column; 
+    /* flex-direction: to change the "main" axis to vertical and secondary axis to horizontal as opposed to default main as horizontal, etc  */
+    align-items: center;
+    /* to center items along secondary axis (horizontal since we changed directions) */
+  }
+
+  #two {
+      display: flex;
+      align-items: center;
+      /* will center elements along secondary axis (default vertically) */
+      justify-content: space-between;
+      /* even distance of space between elements */
+      flex-wrap: wrap;
+  }
+/* Bonus */
+   #one {
+       flex-direction: column-reverse;
+   }
+
+   #two>div:nth-of-type(1) {
+       order: 2; 
+   }
+   #two>div:nth-last-of-type(2) {
+       order: 3; 
+   }
+   
+   #two {position:relative;}
+    #brown {
+       position: absolute;
+       top:0; 
+       left: 0;
+    }
+    
+    #orange {
+        position:absolute;
+        right: 35%;
+    }
+
+    #purple { 
+        position:absolute;
+        bottom: 0;
+        right:0; 
+    }
+
+
+
+   
+
+
