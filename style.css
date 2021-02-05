@@ -75,11 +75,9 @@ section {
    }
 
    #brown {
-       display: flex ;
        align-self: flex-start;
    }
    #purple {
-     display:flex;
      align-self:flex-end;
    }
 
