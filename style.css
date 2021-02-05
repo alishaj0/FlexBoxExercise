@@ -73,8 +73,18 @@ section {
    #two>div:nth-last-of-type(2) {
        order: 3; 
    }
-   
-   #two {position:relative;}
+
+   #brown {
+       display: flex ;
+       align-self: flex-start;
+   }
+   #purple {
+     display:flex;
+     align-self:flex-end;
+   }
+
+
+   /* #two {position:relative;}
     #brown {
        position: absolute;
        top:0; 
@@ -90,7 +100,7 @@ section {
         position:absolute;
         bottom: 0;
         right:0; 
-    }
+    } */
 
 
 
