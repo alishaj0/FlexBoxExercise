@@ -47,9 +47,9 @@ section {
     display: flex; 
     /* to style to make container a flexbox container */
     justify-content: flex-end; 
-    /* to move elements to upper right hand corner of flexbox container */
+    /* to move elements to upper right hand corner of flexbox container-end of main axis */
     flex-direction: column; 
-    /* flex-direction: to change the "main" axis to vertical and secondary axis to horizontal as opposed to default main as horizontal, etc  */
+    /* flex-direction: to change the "main" axis to vertical and secondary axis to horizontal  */
     align-items: center;
     /* to center items along secondary axis (horizontal since we changed directions) */
   }
@@ -66,19 +66,32 @@ section {
    #one {
        flex-direction: column-reverse;
    }
-
+/* 
    #two>div:nth-of-type(1) {
        order: 2; 
    }
    #two>div:nth-last-of-type(2) {
        order: 3; 
-   }
+   } */
+
+
+  #orange {
+    order: 2;
+  }
+
+  #brown {
+    order: 1;
+  }
+
+  #purple {
+    order: 3; 
+  }   
 
    #brown {
-       align-self: flex-start;
+      align-self: flex-start;
    }
    #purple {
-     align-self:flex-end;
+      align-self: flex-end;
    }
 
 
